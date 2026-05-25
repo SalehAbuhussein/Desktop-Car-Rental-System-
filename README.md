@@ -94,6 +94,8 @@ Data Access Layer
 
 # 🗄️ Database
 
+<img width="1671" height="1331" alt="Car Rental drawio" src="https://github.com/user-attachments/assets/e47ba741-074a-4e5a-a626-1b2f0eb6de9a" />
+
 The project includes:
 - Tables
 - Foreign Keys
@@ -157,9 +159,23 @@ Build and run the application.
 
 ---
 
+# 📸 Screenshots
+<img width="800" height="518" alt="image" src="https://github.com/user-attachments/assets/bc95ffbd-b514-4dae-969e-fddc68a6c467" />
+<img width="1384" height="846" alt="image" src="https://github.com/user-attachments/assets/804dbb93-7d5d-4775-af5e-24052c958700" />
+<img width="1379" height="850" alt="image" src="https://github.com/user-attachments/assets/0c613e42-facf-4153-87e9-1afe8acbda5d" />
+<img width="1380" height="850" alt="image" src="https://github.com/user-attachments/assets/eafafdf1-9b0f-4605-9648-c41efc247fe2" />
+<img width="1375" height="844" alt="image" src="https://github.com/user-attachments/assets/f4b220e0-8585-4895-8b14-81d3ff9cb72b" />
+<img width="1371" height="846" alt="image" src="https://github.com/user-attachments/assets/0c06d697-cfcb-4990-a9cf-1dd28f7b3fd8" />
+<img width="1377" height="849" alt="image" src="https://github.com/user-attachments/assets/6380206d-865f-40e5-ae02-979745f71334" />
+<img width="1083" height="922" alt="image" src="https://github.com/user-attachments/assets/d101c560-5495-4c1e-8ccb-7d7b48a8830f" />
+<img width="1105" height="766" alt="image" src="https://github.com/user-attachments/assets/5bb92ada-dfd2-4918-9b8c-c4a245fe7c41" />
+<img width="1343" height="654" alt="image" src="https://github.com/user-attachments/assets/05518a87-25e8-4fc3-b71c-916f37759001" />
+<img width="1079" height="632" alt="image" src="https://github.com/user-attachments/assets/4c441fbc-d89f-4c2a-a0ea-fd927c780598" />
+<img width="1079" height="774" alt="image" src="https://github.com/user-attachments/assets/8d9d89e8-efdd-4910-8f78-424595c2ab5a" />
+
+
+
 ---
-# Database Design
-<img width="1671" height="1331" alt="Car Rental drawio" src="https://github.com/user-attachments/assets/e47ba741-074a-4e5a-a626-1b2f0eb6de9a" />
 
 # 📚 What I Learned
 

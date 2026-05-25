@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5486EE2-3A67-42D5-97E2-C32AA76D11E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cars_Rental</RootNamespace>
+    <AssemblyName>Cars Rental</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ububox.G2Crack.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\Forms\frmAddUpdateCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\frmAddUpdateCar.Designer.cs">
+      <DependentUpon>frmAddUpdateCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Forms\FuelTypes\frmAddEditFuelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\FuelTypes\frmAddEditFuelType.Designer.cs">
+      <DependentUpon>frmAddEditFuelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Forms\Makes\frmAddEditMake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\Makes\frmAddEditMake.Designer.cs">
+      <DependentUpon>frmAddEditMake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Forms\Models\frmAddUpdateModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\Models\frmAddUpdateModel.Designer.cs">
+      <DependentUpon>frmAddUpdateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Forms\Transmissions\frmAddEditTransmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\Transmissions\frmAddEditTransmission.Designer.cs">
+      <DependentUpon>frmAddEditTransmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Forms\Years\frmAddEditYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\Forms\Years\frmAddEditYear.Designer.cs">
+      <DependentUpon>frmAddEditYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewCars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewCars.Designer.cs">
+      <DependentUpon>viewCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewCarsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewCarsList.Designer.cs">
+      <DependentUpon>viewCarsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewFuelTypesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewFuelTypesList.Designer.cs">
+      <DependentUpon>viewFuelTypesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewMakesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewMakesList.Designer.cs">
+      <DependentUpon>viewMakesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewModelsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewModelsList.Designer.cs">
+      <DependentUpon>viewModelsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewTransmissionsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewTransmissionsList.Designer.cs">
+      <DependentUpon>viewTransmissionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Views\viewYearsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Car\Views\viewYearsList.Designer.cs">
+      <DependentUpon>viewYearsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Forms\frmAddUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\Forms\frmAddUpdateCustomer.Designer.cs">
+      <DependentUpon>frmAddUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Views\viewCustomersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\Views\viewCustomersList.Designer.cs">
+      <DependentUpon>viewCustomersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Views\viewDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Views\viewDashboard.Designer.cs">
+      <DependentUpon>viewDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Forms\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Forms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\CurrentUser.cs" />
+    <Compile Include="Global Classes\Utility.cs" />
+    <Compile Include="Global Classes\Validators.cs" />
+    <Compile Include="Payment\Forms\frmPaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\Forms\frmPaymentHistory.Designer.cs">
+      <DependentUpon>frmPaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Views\viewPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\Views\viewPayment.Designer.cs">
+      <DependentUpon>viewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\Forms\frmAddEditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\Forms\frmAddEditPerson.Designer.cs">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rental\Forms\frmAddRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental\Forms\frmAddRental.Designer.cs">
+      <DependentUpon>frmAddRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Forms\frmExtendRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental\Forms\frmExtendRental.Designer.cs">
+      <DependentUpon>frmExtendRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Forms\frmRentalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental\Forms\frmRentalManagement.Designer.cs">
+      <DependentUpon>frmRentalManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Forms\frmReturnRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental\Forms\frmReturnRental.Designer.cs">
+      <DependentUpon>frmReturnRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Forms\frmViewRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental\Forms\frmViewRental.Designer.cs">
+      <DependentUpon>frmViewRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Views\viewRentals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rental\Views\viewRentals.Designer.cs">
+      <DependentUpon>viewRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\Views\viewRentalsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rental\Views\viewRentalsList.Designer.cs">
+      <DependentUpon>viewRentalsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Controls\ctrlImageUploader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\Controls\ctrlImageUploader.Designer.cs">
+      <DependentUpon>ctrlImageUploader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Forms\frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Forms\frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Roles\Forms\frmAddEditRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Roles\Forms\frmAddEditRole.Designer.cs">
+      <DependentUpon>frmAddEditRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Roles\Forms\frmRolesManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Roles\Forms\frmRolesManagement.Designer.cs">
+      <DependentUpon>frmRolesManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Views\viewUsersManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\Views\viewUsersManagement.Designer.cs">
+      <DependentUpon>viewUsersManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Car\Forms\frmAddUpdateCar.resx">
+      <DependentUpon>frmAddUpdateCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Forms\FuelTypes\frmAddEditFuelType.resx">
+      <DependentUpon>frmAddEditFuelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Forms\Makes\frmAddEditMake.resx">
+      <DependentUpon>frmAddEditMake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Forms\Models\frmAddUpdateModel.resx">
+      <DependentUpon>frmAddUpdateModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Forms\Transmissions\frmAddEditTransmission.resx">
+      <DependentUpon>frmAddEditTransmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Forms\Years\frmAddEditYear.resx">
+      <DependentUpon>frmAddEditYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewCars.resx">
+      <DependentUpon>viewCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewCarsList.resx">
+      <DependentUpon>viewCarsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewFuelTypesList.resx">
+      <DependentUpon>viewFuelTypesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewMakesList.resx">
+      <DependentUpon>viewMakesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewModelsList.resx">
+      <DependentUpon>viewModelsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewTransmissionsList.resx">
+      <DependentUpon>viewTransmissionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\Views\viewYearsList.resx">
+      <DependentUpon>viewYearsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Forms\frmAddUpdateCustomer.resx">
+      <DependentUpon>frmAddUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Views\viewCustomersList.resx">
+      <DependentUpon>viewCustomersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Views\viewDashboard.resx">
+      <DependentUpon>viewDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\Forms\frmPaymentHistory.resx">
+      <DependentUpon>frmPaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\Views\viewPayment.resx">
+      <DependentUpon>viewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\Forms\frmAddEditPerson.resx">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Forms\frmAddRental.resx">
+      <DependentUpon>frmAddRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Forms\frmExtendRental.resx">
+      <DependentUpon>frmExtendRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Forms\frmRentalManagement.resx">
+      <DependentUpon>frmRentalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Forms\frmReturnRental.resx">
+      <DependentUpon>frmReturnRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Forms\frmViewRental.resx">
+      <DependentUpon>frmViewRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Views\viewRentals.resx">
+      <DependentUpon>viewRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental\Views\viewRentalsList.resx">
+      <DependentUpon>viewRentalsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\Controls\ctrlImageUploader.resx">
+      <DependentUpon>ctrlImageUploader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Forms\frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Roles\Forms\frmAddEditRole.resx">
+      <DependentUpon>frmAddEditRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Roles\Forms\frmRolesManagement.resx">
+      <DependentUpon>frmRolesManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Views\viewUsersManagement.resx">
+      <DependentUpon>viewUsersManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{e2e71d37-dd81-4224-9b47-6c195cb89de6}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Person\Views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

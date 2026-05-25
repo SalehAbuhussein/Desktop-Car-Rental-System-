@@ -1,0 +1,54 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.obj
+*.exe
+
+# Build folders
+bin/
+obj/
+
+# NuGet Packages
+packages/
+*.nupkg
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# SQL Server
+*.mdf
+*.ldf
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Publish folders
+publish/
+
+# Temp files
+*.tmp
+*.temp
+
+# NuGet
+.nuget/
+
+# Images generated during runtime
+Car Rental Images/
+
+# Database backups
+*.bak
+
+# Others
+*.dbmdl

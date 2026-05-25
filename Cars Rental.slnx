@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BusinessLayer/BusinessLayer.csproj" Id="e2e71d37-dd81-4224-9b47-6c195cb89de6" />
+  <Project Path="Cars Rental/Cars Rental.csproj" Id="c5486ee2-3a67-42d5-97e2-c32aa76d11e4" />
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="fac09e9d-6faf-49e8-8ac4-c527aeb57124" />
+</Solution>

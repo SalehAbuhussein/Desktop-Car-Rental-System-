@@ -233,7 +233,7 @@ namespace Cars_Rental.Car.Forms
 
         private void tbPricePerDay_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBox tb = (TextBox)sender;
+            Guna2TextBox tb = (Guna2TextBox)sender;
 
             if (char.IsControl(e.KeyChar))
                 return;
@@ -483,6 +483,8 @@ namespace Cars_Rental.Car.Forms
             CarInfo.ModelID = clsModel.FindByName(cbModel.SelectedItem?.ToString()).ModelID;
             CarInfo.YearID = clsYear.FindByYear(Convert.ToInt32(cbYear.SelectedItem.ToString())).YearID;
             CarInfo.FuelTypeID = clsFuelType.FindByName(cbFuelType.SelectedItem?.ToString()).FuelTypeID;
+            CarInfo.TransmissionInfo = clsTransmission.FindByName(cbTransmission.SelectedItem?.ToString());
+            CarInfo.TransmissionID = CarInfo.TransmissionInfo.TransmissionID;
 
             string status = _Mode == enMode.Add ? "Added" : "Updated";
 

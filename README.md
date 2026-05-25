@@ -157,6 +157,10 @@ Build and run the application.
 
 ---
 
+---
+# Database Design
+<img width="1671" height="1331" alt="Car Rental drawio" src="https://github.com/user-attachments/assets/e47ba741-074a-4e5a-a626-1b2f0eb6de9a" />
+
 # 📚 What I Learned
 
 Through this project, I gained practical experience with:

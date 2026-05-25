@@ -157,12 +157,6 @@ Build and run the application.
 
 ---
 
-# 📸 Screenshots
-
-(Add screenshots here later)
-
----
-
 # 📚 What I Learned
 
 Through this project, I gained practical experience with:

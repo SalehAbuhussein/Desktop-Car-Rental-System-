@@ -235,28 +235,22 @@
     <Compile Include="Rental\Views\viewRentalsList.Designer.cs">
       <DependentUpon>viewRentalsList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shared\Controls\ctrlImageUploader.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Shared\Controls\ctrlImageUploader.Designer.cs">
-      <DependentUpon>ctrlImageUploader.cs</DependentUpon>
-    </Compile>
     <Compile Include="User\Forms\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User\Forms\frmAddUpdateUser.Designer.cs">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Roles\Forms\frmAddEditRole.cs">
+    <Compile Include="User\Forms\Roles\Forms\frmAddEditRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Roles\Forms\frmAddEditRole.Designer.cs">
+    <Compile Include="User\Forms\Roles\Forms\frmAddEditRole.Designer.cs">
       <DependentUpon>frmAddEditRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Roles\Forms\frmRolesManagement.cs">
+    <Compile Include="User\Forms\Roles\Forms\frmRolesManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Roles\Forms\frmRolesManagement.Designer.cs">
+    <Compile Include="User\Forms\Roles\Forms\frmRolesManagement.Designer.cs">
       <DependentUpon>frmRolesManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Views\viewUsersManagement.cs">
@@ -354,16 +348,13 @@
     <EmbeddedResource Include="Rental\Views\viewRentalsList.resx">
       <DependentUpon>viewRentalsList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shared\Controls\ctrlImageUploader.resx">
-      <DependentUpon>ctrlImageUploader.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="User\Forms\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Roles\Forms\frmAddEditRole.resx">
+    <EmbeddedResource Include="User\Forms\Roles\Forms\frmAddEditRole.resx">
       <DependentUpon>frmAddEditRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Roles\Forms\frmRolesManagement.resx">
+    <EmbeddedResource Include="User\Forms\Roles\Forms\frmRolesManagement.resx">
       <DependentUpon>frmRolesManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Views\viewUsersManagement.resx">
